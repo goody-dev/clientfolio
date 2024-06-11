@@ -1,0 +1,59 @@
+#hero {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+#product-frame {
+    width: 60%;
+    align-self: flex-start;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    flex-basis: content;
+
+    .product-vector {
+        width: 100%;
+        height: fit-content;
+    }
+}
+
+#designer-frame {
+    width: 60%;
+    align-self: flex-end;
+    display: flex;
+    flex-direction: column;
+
+    .otw-vector {
+        width: 30%;
+        align-self: flex-end;
+    }
+}
+
+#hero-caption {
+    width: 90%;
+    align-self: flex-start;
+    display: flex;
+    flex-direction: column;
+
+    .hero-text {
+        max-width:50%;
+        text-wrap: wrap;
+    }
+
+    .hero-cta {
+        display: flex;
+        flex-direction: row;
+        gap: 3px;
+    }
+}
+
+#nav-mouse {
+    align-self: flex-end;
+    width: 30px;
+}
+
+
+
+
+

@@ -1,0 +1,28 @@
+#footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#socials {
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 3.3%;
+    padding: 20px 0;
+}
+
+#footer > #socials > a {
+    width: 30%;
+    text-align: center;
+    padding: 10px 0;
+}
+
+#copyright-text {
+    text-wrap: wrap;
+    text-align: center;
+    padding: 20px 0;
+}
+

@@ -1,0 +1,17 @@
+#cta-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 0;
+}
+
+.cta-text {
+    text-align: center;
+}
+
+#cta-buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}

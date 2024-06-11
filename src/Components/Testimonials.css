@@ -1,0 +1,39 @@
+#testimonials {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px 0;
+}
+
+.section-header-text {
+    align-self: center;
+}
+
+.testimonial-cards {
+    display: flex;
+    flex-direction: row;
+}
+
+.profile {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.testimonial-slider {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.slider-controls {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+
+.slider-controls > button {
+    background: none;
+    border: none;
+}
+

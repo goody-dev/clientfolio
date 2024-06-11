@@ -1,0 +1,52 @@
+import React from 'react'
+import WorkCard from './WorkCard'
+import './Work.css'
+
+const Work = () => {
+  const works = [
+    {
+      industry: "Logistics",
+      project: "PYKUP",
+      imgSrc: "../assests/designs/Work-1.png"
+    },
+    {
+      industry: "Fintech",
+      project: "GLOBPAY",
+      imgSrc: "../assests/designs/Work-1.png"
+    },
+    {
+      industry: "Banking",
+      project: "ABULESORO",
+      imgSrc: "../assests/designs/Work-1.png"
+    },
+    {
+      industry: "Foodtech",
+      project: "MR BIGGS",
+      imgSrc: "../assests/designs/Work-1.png"
+    },
+    {
+      industry: "SMART POCKET",
+      project: "PYKUP",
+      imgSrc: "../assests/designs/Work-1.png"
+    },
+    {
+      industry: "XPLORE 9JA",
+      project: "PYKUP",
+      imgSrc: "../assests/designs/Work-1.png"
+    },
+  ]
+
+  const actionText = "View Case Study"
+
+  return (
+    <div id='work' className='section'>
+      <p>MY WORK</p>
+      <hr className='header-div'></hr>
+      <div className='works'>
+        {works.map((work, idx)=> <WorkCard key={idx} Industry={work.industry} Project={work.project} ImageSrc={work.imgSrc} actionText={actionText} />)}
+      </div>
+    </div>
+  )
+}
+
+export default Work
