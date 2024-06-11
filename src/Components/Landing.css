@@ -2,8 +2,9 @@
     min-width: 320px;
     width: 100%;
     min-height: 100vh;
-    background-image: url('../assets/designs/landing-background.png');
+    background: url('../assets/designs/landing-background.png');
     display: flex;
     flex-direction: column;
     align-items: center;
+    mask-image: linear-gradient(to bottom, black, transparent)
 } 
