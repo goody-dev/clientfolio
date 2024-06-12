@@ -12,8 +12,14 @@ const Header = () => {
     <div id="header" className="section">
       <img src={Logo} />
       <div id="nav-bar">
-        <button className='work-button'><a>Work</a></button>
-        <button className='abtme-button'><a>About Me</a></button>
+        <div className='navigator'>
+          <hr id='work-page-indicator' className="page-indicator"/>
+          <button className='work-button'><a>Work</a></button>
+        </div>
+        <div className='navigator'>
+          <hr id='abtme-page-indicator' className="page-indicator"/>
+          <button className='abtme-button'><a>About Me</a></button>
+        </div>
       </div>
       <div id="header-cta">
         <button className="resume">Resume<img src={DiagonalArrowUpIcon} /></button>
