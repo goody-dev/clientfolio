@@ -6,6 +6,7 @@ import ThreeDotsIcon from '../assets/designs/three-dots-icon.png'
 import TestimonialCard from './TestimonialCard'
 
 import './Testimonials.css'
+import '../App.css'
 
 const Testimonials = () => {
 
@@ -29,8 +30,7 @@ const Testimonials = () => {
       <p className="section-header-text">Testimonial</p>
       <hr className="section-header-text header-div"></hr>
       <div className="testimonial-cards">
-        {testimonials.map((testimonial, idx)=> <TestimonialCard key={idx} testimony={testimonial.testimony} witnessAvatar={testimonial.witnessAvatar} witnessName={testimonial.witnessName} witnessTitle={testimonial.witnessTitle} />)}
-        <TestimonialCard />
+         {testimonials.map((testimonial, idx)=> <TestimonialCard key={idx} testimony={testimonial.testimony} witnessAvatar={testimonial.witnessAvatar} witnessName={testimonial.witnessName} witnessTitle={testimonial.witnessTitle} />)}
       </div>
       <div className="testimonial-slider">
         <div>

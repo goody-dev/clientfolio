@@ -25,13 +25,13 @@ const Work = () => {
       imgSrc: "../assests/designs/Work-1.png"
     },
     {
-      industry: "SMART POCKET",
-      project: "PYKUP",
+      industry: "Fintech",
+      project: "SMART POCKET",
       imgSrc: "../assests/designs/Work-1.png"
     },
     {
-      industry: "XPLORE 9JA",
-      project: "PYKUP",
+      industry: "Travel",
+      project: "XPLORE 9JA",
       imgSrc: "../assests/designs/Work-1.png"
     },
   ]

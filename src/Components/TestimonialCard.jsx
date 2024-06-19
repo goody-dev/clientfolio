@@ -3,8 +3,8 @@ import './Testimonials.css'
 
 const TestimonialCard = ({testimony, witnessAvatar, witnessName, witnessTitle}) => {
   return (
-    <div>
-      <p>"</p>
+    <div className='testimonial-card'>
+      <p className='quote'>"</p>
       <p>{testimony}</p>
       <div className='profile'>
         <img src={witnessAvatar}/>

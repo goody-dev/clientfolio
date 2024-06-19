@@ -5,12 +5,12 @@ const WorkCard = ({Industry, Project, ImgSrc, ActionText}) => {
   return (
     <div className='work-card'>
       <div>
-        <button>{Industry || "Industry"}</button>
-        <div>
+        <button className='industry-label'>{Industry || "Industry"}</button>
+        <span className='image-demo'>
           <img src={ImgSrc} />
-        </div>
+        </span>
       </div>
-      <div>
+      <div className='work-info'>
         <p>{Project || "Organization"}</p>
         <button>{ActionText || "View Case Study"}<img src={ArrowIcon} /></button>
       </div>

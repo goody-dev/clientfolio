@@ -12,12 +12,38 @@
 .testimonial-cards {
     display: flex;
     flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.testimonial-card {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 7px;
+    width: 30%;
+    height: 300px;
+    min-width: 350px;
+    border: 2px solid var(--img-background);
+    border-radius: 5px;
+    background-color: var(--card-background);
+    box-shadow: var(--box-shadow);
+    padding: 20px;
+
+    .quote {
+        font-size: 50px;
+        line-height: 0;
+    }
 }
 
 .profile {
     display: flex;
     flex-direction: row;
     align-items: center;
+    font-size: small;
+    background: #000;
+    margin: 0;
 }
 
 .testimonial-slider {
