@@ -32,6 +32,7 @@
   margin: 0 auto;
   display: flex;
   flex-direction: column;
+  gap: 20px;
   align-items: center;
   overflow-x: hidden;
 }
@@ -61,7 +62,6 @@ button {
 .header-div {
   width: 40px;
   background: #f2f2f2;
-  margin-top: -15px;
 }
 
 #services-scroll {

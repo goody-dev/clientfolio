@@ -26,7 +26,7 @@ const Hero = () => {
           <p>Reach out at</p><button className='button'><img src={MailIcon} />dipedeji@gmail.com</button>
         </div>
       </div>
-      <img id="nav-mouse" src={WirelessMouseIcon} />
+      <a className="nav-link" href='#work' ><img id="nav-mouse" src={WirelessMouseIcon} /></a>
     </div>
   )
 }

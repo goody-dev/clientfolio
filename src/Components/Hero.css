@@ -74,8 +74,11 @@
     }
 }
 
-#nav-mouse {
+.nav-link {
     align-self: flex-end;
+}
+
+#nav-mouse {
     width: 30px;
     cursor: pointer;
 }

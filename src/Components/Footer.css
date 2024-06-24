@@ -10,14 +10,16 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
-    gap: 3.3%;
+    gap: 30%;
     padding: 20px 0;
 }
 
 #footer > #socials > a {
-    width: 30%;
+    width: auto;
     text-align: center;
     padding: 10px 0;
+    text-decoration: none;
+    color: inherit;
 }
 
 #copyright-text {

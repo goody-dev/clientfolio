@@ -40,8 +40,10 @@ const Work = () => {
 
   return (
     <div id='work' className='section'>
-      <p>MY WORK</p>
-      <hr className='header-div'></hr>
+      <div className='section-header'>
+        <p className='section-header-text'>MY WORK</p>
+        <hr className='section-header-text header-div'></hr>
+      </div>
       <div className='works'>
         {works.map((work, idx)=> <WorkCard key={idx} Industry={work.industry} Project={work.project} ImageSrc={work.imgSrc} actionText={actionText} />)}
       </div>

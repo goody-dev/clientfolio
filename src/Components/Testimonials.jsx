@@ -16,21 +16,25 @@ const Testimonials = () => {
       witnessAvatar: "/davio-white-avatar.png",
       witnessName: "Davio White",
       witnessTitle: "Software Designer, Monafa",
+      className: "visible-card1"
     },
     {
       testimony: "Heritage's innovative solutions and commitment to user experience on our SaaS product was top-notch. His work on Payrev was a game-changer. Highly recommend!",
       witnessAvatar: "/samuel-adedeji-avatar.png",
       witnessName: "Samuel Adedeji",
       witnessTitle: "Team Lead Open Banking, Polaris",
+      className: "visible-card2"
     }
   ]
 
   return (
     <div id="testimonials" className='section'>
-      <p className="section-header-text">Testimonial</p>
-      <hr className="section-header-text header-div"></hr>
+      <div className="section-header">
+        <p className="section-header-text">Testimonial</p>
+        <hr className="section-header-text header-div"></hr>
+      </div>
       <div className="testimonial-cards">
-         {testimonials.map((testimonial, idx)=> <TestimonialCard key={idx} testimony={testimonial.testimony} witnessAvatar={testimonial.witnessAvatar} witnessName={testimonial.witnessName} witnessTitle={testimonial.witnessTitle} />)}
+         {testimonials.map((testimonial, idx)=> <TestimonialCard key={idx} className={testimonial.className} testimony={testimonial.testimony} witnessAvatar={testimonial.witnessAvatar} witnessName={testimonial.witnessName} witnessTitle={testimonial.witnessTitle} />)}
       </div>
       <div className="testimonial-slider">
         <div>
