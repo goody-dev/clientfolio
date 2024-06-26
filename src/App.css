@@ -55,7 +55,7 @@ button {
 
 .section {
   min-width: 320px;
-  width: 100%;
+  width: 90%;
   padding: 0 10px;
 }
 
@@ -73,6 +73,9 @@ button {
   font-size: var(--scroll-text);
   animation: scrolling 20s infinite linear;
   
+  p {
+    text-wrap: nowrap;
+  }
 
   .scroll-dot {
     color: green;
@@ -84,11 +87,8 @@ button {
   0% {
     margin-left: 200vw;
   }
-  50% {
-    margin-left: 50vw;
-  }
   100% {
-    margin-left: -100vw;
+    margin-left: -500vw;
   }
 }
 
@@ -101,5 +101,13 @@ button {
   .section {
     max-width: 1440px;
     width: 90%;
+  }
+  @keyframes scrolling {
+    0% {
+      margin-left: 200vw;
+    }
+    100% {
+      margin-left: -300vw;
+    }
   }
 }

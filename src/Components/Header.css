@@ -10,7 +10,7 @@
 #nav-bar {
     border: 1px solid var(--secondary-color);
     padding: 0 5px 5px;
-    display: flex;
+    display: none;
     flex-direction: row;
     gap: 5px;
     background-color: rgba(242, 242, 242, 0.05);
@@ -54,7 +54,7 @@
 
 #header-cta {
     padding: 3px;
-    display: flex;
+    display: none;
     flex-direction: row;
     gap: 7px;
 
@@ -73,5 +73,43 @@
         flex-direction: row;
         gap: 3px;
         padding: 7px;
+    }
+}
+
+.hamburger {
+    display: inline-block;
+}
+
+@media screen and (min-width: 768px) {
+    #header-cta {
+        padding: 3px;
+        display: flex;
+        flex-direction: row;
+        gap: 7px;
+    
+        .resume {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            background: none;
+            border: none;
+            padding: 5px;
+            gap: 3px;
+        }
+    
+        .lets-talk {
+            display: flex;
+            flex-direction: row;
+            gap: 3px;
+            padding: 7px;
+        }
+    }
+
+    #nav-bar {
+        display: flex;
+    }
+
+    .hamburger {
+        display: none;
     }
 }

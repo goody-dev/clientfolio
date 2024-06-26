@@ -25,6 +25,7 @@ const Header = () => {
         <button className="resume">Resume<img src={DiagonalArrowUpIcon} /></button>
         <button className="lets-talk"><img src={MailIcon} />Let's Talk</button>
       </div>
+      <p className="hamburger">Menu</p>
     </div>
   )
 }

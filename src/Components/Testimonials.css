@@ -25,6 +25,7 @@
         transform: rotate(-10deg);
     }
     .visible-card2 {
+        display: none;
         transform: rotate(10deg);
     }
 }
@@ -78,5 +79,23 @@
 .slider-controls > button {
     background: none;
     border: none;
+}
+
+@media screen and (min-width: 768px) {
+    .testimonial-cards {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+
+        .visible-card1 {
+            display: inline;
+            transform: rotate(-10deg);
+        }
+        .visible-card2 {
+            display: inline;
+            transform: rotate(10deg);
+        }
+    }
 }
 
