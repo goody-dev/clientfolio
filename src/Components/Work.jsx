@@ -5,35 +5,29 @@ import './Work.css'
 const Work = () => {
   const works = [
     {
+      industry: "NGO",
+      project: "FLECT",
+      imgSrc: "../assests/designs/Work-1.png",
+      detailText: "Flect is a company that provides solutions to the writing and financial needs of people by the help of a SAAS web app"
+    },
+    {
+      industry: "NGO",
+      project: "INSPIRE STEM GIRLS",
+      imgSrc: "../assests/designs/Work-1.png",
+      detailText: "Inspire STEM Girls' mission is to cultivate an empowering environment that encourages young girls to explore and excel in the field"
+    },
+    {
       industry: "Logistics",
       project: "PYKUP",
-      imgSrc: "../assests/designs/Work-1.png"
+      imgSrc: "../assests/designs/Work-1.png",
+      detailText: "We connect drivers/drivers looking to make extra cash with individuals looking to send packages to families, friends and business across Nigeria"
     },
     {
       industry: "Fintech",
       project: "GLOBPAY",
-      imgSrc: "../assests/designs/Work-1.png"
-    },
-    {
-      industry: "Banking",
-      project: "ABULESORO",
-      imgSrc: "../assests/designs/Work-1.png"
-    },
-    {
-      industry: "Foodtech",
-      project: "MR BIGGS",
-      imgSrc: "../assests/designs/Work-1.png"
-    },
-    {
-      industry: "Fintech",
-      project: "SMART POCKET",
-      imgSrc: "../assests/designs/Work-1.png"
-    },
-    {
-      industry: "Travel",
-      project: "XPLORE 9JA",
-      imgSrc: "../assests/designs/Work-1.png"
-    },
+      imgSrc: "../assests/designs/Work-1.png",
+      detailText: "Transact seemlessly across the border with your mobile wallet in a preferred currency using Globpay app"
+    }
   ]
 
   const actionText = "View Case Study"
@@ -45,7 +39,7 @@ const Work = () => {
         <hr className='section-header-text header-div'></hr>
       </div>
       <div className='works'>
-        {works.map((work, idx)=> <WorkCard key={idx} Industry={work.industry} Project={work.project} ImageSrc={work.imgSrc} actionText={actionText} />)}
+        {works.map((work, idx)=> <WorkCard key={idx} industry={work.industry} project={work.project} imageSrc={work.imgSrc} detailText={work.detailText} actionText={actionText} />)}
       </div>
     </div>
   )

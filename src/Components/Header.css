@@ -58,21 +58,20 @@
     flex-direction: row;
     gap: 7px;
 
-    .resume {
+    .resume-button {
         display: flex;
         flex-direction: row;
         align-items: center;
         background: none;
         border: none;
-        padding: 5px;
-        gap: 3px;
+        /* padding: 5px; */
+        gap: 5px;
     }
 
     .lets-talk {
         display: flex;
         flex-direction: row;
-        gap: 3px;
-        padding: 7px;
+        gap: 5px;
     }
 }
 
@@ -87,21 +86,21 @@
         flex-direction: row;
         gap: 7px;
     
-        .resume {
+        .resume-button {
             display: flex;
             flex-direction: row;
             align-items: center;
             background: none;
             border: none;
-            padding: 5px;
-            gap: 3px;
+            gap: 5px;
+            padding: var(--button-padding);
         }
     
         .lets-talk {
             display: flex;
             flex-direction: row;
-            gap: 3px;
-            padding: 7px;
+            gap: 5px;
+            padding: var(--button-padding);
         }
     }
 

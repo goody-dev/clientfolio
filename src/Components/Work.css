@@ -24,17 +24,15 @@
 
 .works {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 35px;
-    justify-content: center;
+    flex-direction: column;
+    gap: 3em;
+    align-items: center;
 }
 
 .work-card {
-    width: 45%;
-    height: 400px;
+    width: 85vw;
+    height: auto;
     /* background-color: #787878; */
-    min-width: 375px;
     border: 2px solid var(--img-background);
     border-radius: 5px;
     background-color: var(--card-background);
@@ -44,8 +42,10 @@
     padding: 3px;
 
     .image-demo {
-        display: block;
-        height: 275px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        height: 85vh;
         width: 100%;
         background-color: var(--img-background);
         border-radius: 2px;
@@ -58,16 +58,50 @@
         padding: 10px;
         align-items: flex-start;
         justify-content: space-between;
+        gap: 2em;
+    }
+
+    .org-name {
+        font-size: larger;
     }
 
     .industry-label {
         display: block;
         position: absolute;
         z-index: 99 !important;
-        margin: 20px;
+        margin: 10px;
         color: white;
         background-color: var(--label-background);
         border-radius: 2px;
         cursor: none;
+    }
+
+    .detail {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1em;
+    }
+    .detail-text {
+        font-size: small;
+        text-wrap: wrap;
+    }
+    .detail-button {
+        width: 12em;
+        height: 3em;
+        min-width: max-content;
+        padding: 0.5em;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .work-card {
+        .detail {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: flex-start;
+            width: 100%;
+        }
     }
 }
