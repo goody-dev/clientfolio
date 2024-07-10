@@ -72,10 +72,10 @@ const experiences = [
 ]
 
   return (
-    <div className='section'>
-      <div>
-        <h1>Experience</h1>
-        <hr className='header-div'/>
+    <div id='experience' className='section'>
+      <div className='section-header'>
+        <p className='section-header-text'>Experience</p>
+        <hr className='section-header-text header-div'/>
       </div>
       <div id='experiences'>
         {experiences.map((experience, id)=>

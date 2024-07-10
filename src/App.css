@@ -238,6 +238,6 @@ button {
 @media screen and (min-width: 1440px) {
   .section {
     max-width: 1440px;
-    padding: auto 5rem;
+    padding: 0 5rem;
   }
 }

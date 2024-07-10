@@ -1,4 +1,10 @@
-
+#experience {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+    padding: 20px 0;
+}
 #experiences {
     display: flex;
     flex-direction: column;
