@@ -22,7 +22,7 @@ const Hero = () => {
           <img className="otw-vector" src={OpenToWorkVector} />
         </div>
       <div id="hero-caption">
-        <p className="hero-text">Hello!-I'm Heritage Isaac, a <span className='hero-text-span'>Product designer</span><br/> and a <span>no-code developer.</span> I also dabble a little<br/> into branding. I help start-ups make an impact<br/> by solving real life problems and deliver unique,<br/> empathic experiences.</p>
+        <p className="hero-text">Hello!-I'm Heritage Isaac, a <span className='hero-text-span'>Product designer</span> and a <span>no-code developer.</span> I also dabble a little into branding. I help start-ups make an impact by solving real life problems and deliver unique, empathic experiences.</p>
         <div className="hero-cta">
           <div className='cta'>
             <p>Reach out at</p><button className='button'><img src={MailIcon} />dipedeji@gmail.com</button>
