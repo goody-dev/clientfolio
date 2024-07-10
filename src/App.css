@@ -14,9 +14,9 @@
   --font-normal: 400;
   --font-bold: 700;
 
-  --headline-text: 40px;
+  --headline-text: 120px;
   --quote-size: 100px;
-  --header-text: 25px;
+  --header-text: 30px;
   --paragraph-text: 16px;
   --scroll-text: 20px;
 
@@ -36,9 +36,14 @@
   --white-background: #FFFFFF;
 
   --button-padding: 8px 16px;
-  --body-copy: 16px;
-  --header-copy: 30px;
-  --small-copy: 11px;
+  --headline-text: 120px;
+  --subheadline-text:24px;
+  --body-text: 16px;
+  --header-text: 30px;
+  --small-text: 11px;
+  --scroll-text: 20px;
+  --work-title-text: 32px;
+  --work-about-text: 20px;
 }
 
 hero-headline {
@@ -158,18 +163,7 @@ button {
   background-color: var(--secondary-color);
   color: var(--font-color);
   border-radius: 3px;
-  font-size: 11px; 
-}
-
-.section {
-  min-width: 320px;
-  width: 90%;
-  padding: 0 10px;
-}
-
-.header-div {
-  width: 40px;
-  background: #f2f2f2;
+  font-size: 16px; 
 }
 
 #services-scroll {
@@ -200,6 +194,27 @@ button {
   }
 }
 
+.section {
+  min-width: 320px;
+  width: 90%;
+  padding: 0 10px;
+}
+
+.section-header {
+  display: flex;
+  flex-direction: column;
+  font-size: var(--header-text);
+  gap: 5px;
+}
+
+.header-div {
+  width: 4rem;
+  height: 0.25rem;
+  border-radius: 2rem;
+  background: #f2f2f2;
+  box-shadow: 0px 0.4px 35px 1px rgba(255, 255, 255, 0.6);
+}
+
 .section-header-text {
   align-self: center;
   font-size: var(--header-text);
@@ -217,5 +232,12 @@ button {
     100% {
       margin-left: -300vw;
     }
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .section {
+    max-width: 1440px;
+    padding: auto 5rem;
   }
 }

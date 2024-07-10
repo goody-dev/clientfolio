@@ -6,6 +6,10 @@
     padding: 20px 0;
 }
 
+.cta-headline {
+    font-size: 60px;
+}
+
 .cta-text {
     text-align: center;
 }
@@ -14,4 +18,8 @@
     display: flex;
     flex-direction: row;
     gap: 35px;
+
+    button {
+        padding: var(--button-padding);
+    }
 }

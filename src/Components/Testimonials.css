@@ -1,18 +1,9 @@
 #testimonials {
     display: flex;
     flex-direction: column;
-    gap: 90px;
+    gap: 4rem;
     padding: 20px 0;
     align-items: center;
-}
-
-.section-header {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-.section-header-text {
-    align-self: center;
 }
 
 .testimonial-cards {
@@ -67,7 +58,7 @@
     display: flex;
     width: 100%;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .slider-controls {

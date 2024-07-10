@@ -36,7 +36,7 @@ const Testimonials = () => {
       <div className="testimonial-cards">
          {testimonials.map((testimonial, idx)=> <TestimonialCard key={idx} className={testimonial.className} testimony={testimonial.testimony} witnessAvatar={testimonial.witnessAvatar} witnessName={testimonial.witnessName} witnessTitle={testimonial.witnessTitle} />)}
       </div>
-      <div className="testimonial-slider">
+      <div aria-label='slider' className="testimonial-slider">
         <div>
           <img src={ThreeDotsIcon} />
         </div>

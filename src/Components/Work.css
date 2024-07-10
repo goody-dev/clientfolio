@@ -2,24 +2,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 70px;
+    gap: 3rem;
     padding: 20px 0;
-}
-
-.section-header {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-.section-header-text {
-    align-self: center;
-}
-
-.section-header {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
 }
 
 .works {
@@ -45,24 +29,23 @@
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
-        height: 85vh;
-        width: 100%;
         background-color: var(--img-background);
         border-radius: 2px;
+        margin: 1rem;
     }
 
     .work-info {
         height: 100%;
         display: flex;
         flex-direction: column;
-        padding: 10px;
+        padding: 1rem;
         align-items: flex-start;
         justify-content: space-between;
         gap: 2em;
     }
 
     .org-name {
-        font-size: larger;
+        font-size: large;
     }
 
     .industry-label {
@@ -74,6 +57,7 @@
         background-color: var(--label-background);
         border-radius: 2px;
         cursor: none;
+        padding: var(--button-padding)
     }
 
     .detail {
@@ -96,12 +80,44 @@
 
 @media screen and (min-width: 768px) {
     .work-card {
+        .image-demo {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            background-color: var(--img-background);
+            border-radius: 2px;
+            margin: 15px 30px;
+        }
+
+        .work-info {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            padding: 15px 30px;
+            align-items: flex-start;
+            justify-content: space-between;
+            gap: 2em;
+        }
+
         .detail {
             display: flex;
             flex-direction: row;
             justify-content: space-between;
             align-items: flex-start;
             width: 100%;
+        }
+
+        .org-name {
+            font-size: var(--work-title-text);
+        }
+
+        .detail-text {
+            font-size: var(--work-about-text);
+            text-wrap: wrap;
+        }
+        .detail-button {
+            min-width: max-content;
+            padding: var(--button-padding);
         }
     }
 }

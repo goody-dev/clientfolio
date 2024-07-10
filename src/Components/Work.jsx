@@ -7,25 +7,25 @@ const Work = () => {
     {
       industry: "NGO",
       project: "FLECT",
-      imgSrc: "../assests/designs/Work-1.png",
+      imgSrc: "../assets/designs/work-img.png",
       detailText: "Flect is a company that provides solutions to the writing and financial needs of people by the help of a SAAS web app"
     },
     {
       industry: "NGO",
       project: "INSPIRE STEM GIRLS",
-      imgSrc: "../assests/designs/Work-1.png",
+      imgSrc: "../assets/designs/work-img.png",
       detailText: "Inspire STEM Girls' mission is to cultivate an empowering environment that encourages young girls to explore and excel in the field"
     },
     {
       industry: "Logistics",
       project: "PYKUP",
-      imgSrc: "../assests/designs/Work-1.png",
+      imgSrc: "../assets/designs/work-img.png",
       detailText: "We connect drivers/drivers looking to make extra cash with individuals looking to send packages to families, friends and business across Nigeria"
     },
     {
       industry: "Fintech",
       project: "GLOBPAY",
-      imgSrc: "../assests/designs/Work-1.png",
+      imgSrc: "../assets/designs/work-img.png",
       detailText: "Transact seemlessly across the border with your mobile wallet in a preferred currency using Globpay app"
     }
   ]

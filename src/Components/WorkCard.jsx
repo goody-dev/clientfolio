@@ -1,13 +1,14 @@
 import React from 'react'
 import ArrowIcon from '../assets/designs/arrow-icon.png'
+import workImage from '../assets/designs/work-img.png';
 
 const WorkCard = ({industry, project, imageSr, detailText, actionText}) => {
   return (
     <div className='work-card'>
-      <span className='image-demo'>
+      <div className='image-demo'>
         <button className='industry-label'>{industry || "industry"}</button>
-        {/* <img src={imageSr} /> */}
-      </span>
+        <img src={workImage} /> 
+      </div>
       <div className='work-info'>
         <p className='org-name'>{project || "Organization"}</p>
         <div className='detail'>
