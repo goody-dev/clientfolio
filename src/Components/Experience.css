@@ -8,25 +8,89 @@
 #experiences {
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    gap: 4rem;
 
     .experience {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         justify-content: space-between;
-        gap: 32px;
+        gap: 2rem;
         align-items: flex-start;
 
         .job-detail {
+            width: 100%;
             display: flex;
             flex-direction: column;
             justify-items: flex-start;
+            font-size: var(--body-text);
+            gap: 1rem;
         }
 
         .job-achievements {
+            width: 100%;
+            display: flex;
+            gap: 1rem;
+            flex-direction: column;
+            justify-items: flex-start;
+            font-size: var(--exp-text);
+
+            div {
+                display: flex;
+                flex-direction: row;
+                gap: 1rem;
+            }
+        }
+        .role-company {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+            font-size: var(--exp-text);
+        }
+        .role-type {
+            font-size: var(--exp-headline-text);
+        }
+
+        .location-time {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+            font-size: var(--exp-text);
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    #experience {
+        padding: 4rem 0;
+    }
+    #experiences {
+        display: flex;
+        flex-direction: column;
+        gap: 4rem;
+    
+        .experience {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            gap: 2rem;
+            align-items: flex-start;
+        }
+        .job-detail {
+            max-width: 30%;
             display: flex;
             flex-direction: column;
             justify-items: flex-start;
+            font-size: var(--body-text);
+            gap: 1rem;
+        }
+
+        .job-achievements {
+            max-width: 70%;
+            display: flex;
+            gap: 1rem;
+            flex-direction: column;
+            justify-items: flex-start;
+            font-size: var(--exp-text);
         }
     }
 }

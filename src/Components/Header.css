@@ -34,8 +34,8 @@
         box-shadow: 0px 0px 10px 0px #F2F2F2;
     }
 
-    #abtme-page-indicator {
-        visibility: hidden;
+    .indicator-inactive {
+        visibility: hidden !important;
     }
 
     button {
@@ -43,11 +43,8 @@
         width: 90px;
     }
 
-    .work-button {
+    .button-inactive {
         /*Styles for work button*/
-    }
-
-    .abtme-button {
         background: none;
     }
 }
