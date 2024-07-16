@@ -1,10 +1,14 @@
 @font-face {
   font-family: Berlin Sans;
-  src: url('./fonts/berlinsansfb_reg.ttf');
+  src: url('./fonts/berlinsans.ttf');
 } 
 @font-face {
   font-family: IBMPlexMono;
   src: url('./fonts/IBMPlexMono-MediumItalic.ttf');
+}
+@font-face {
+  font-family: Berlin Signature;
+  src: url('./fonts/berlinsignature.ttf');
 }
 
 * {

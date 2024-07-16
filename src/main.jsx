@@ -5,7 +5,9 @@ import App from './App.jsx'
 import './index.css'
 
 import './fonts/IBMPlexMono-MediumItalic.ttf'
-import './fonts/berlinsansfb_reg.ttf'
+import './fonts/berlinsans.ttf'
+import './fonts/berlinsignature.ttf'
+
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(

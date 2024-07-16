@@ -5,6 +5,24 @@
     padding: 48px 0;
 }
 
+.designer-yellow__mask::before {
+    content: url('../assets/designs/yellow-button.svg');
+    position: absolute;
+    margin-top: -7px;
+}
+
+.designer-blue__mask::before {
+    content: url('../assets/designs/blue-button.svg');
+    position: absolute;
+    margin-top: -7px;
+}
+
+.product-red__mask::before {
+    content: url('../assets/designs/red-button.svg');
+    position: absolute;
+    margin-top: -7px;
+}
+
 #product-frame {
     width: 100%;
     display: flex;
@@ -33,6 +51,7 @@
 
     .designers-text {
         font-size: 4em;
+        font-family: 'Berlin Sans';
     }
 
     .otw-vector {

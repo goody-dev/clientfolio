@@ -22,8 +22,8 @@ const Header = () => {
       <nav>
         <ul id="nav-bar">
           <li className='navigator'>
-            <hr ref={workIndicator}  id='work-page-indicator' className={url.pathname === "/work" || "/"? "page-indicator": "page-indicator indicator-inactive"}/>
-            <NavLink to="/" ><button id='work-button' className={url.pathname === "/work" || "/"? "": "button-inactive"}>Work</button></NavLink>
+            <hr ref={workIndicator}  id='work-page-indicator' className={url.pathname === "/work"? "page-indicator":url.pathname === "/about"? "page-indicator indicator-inactive": "page-indicator"}/>
+            <NavLink to="/work" ><button id='work-button' className={url.pathname === "/work"? "":url.pathname === "/about"? "button-inactive": ""}>Work</button></NavLink>
           </li>
           <li className='navigator'>
             <hr ref={aboutIndicator} id='abtme-page-indicator' className={url.pathname === "/about"? "page-indicator": "page-indicator indicator-inactive"}/>

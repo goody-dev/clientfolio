@@ -14,7 +14,7 @@ import './MeetIsaac.css'
 const MeetIsaac = () => {
   return (
     <div id="meet-isaac" className='section'>
-      <p id='headline-text'>M<span id="about-yellow-mask">E</span>ET <span id="about-blue-mask">H</span>ERITAGE IS<span id="about-red-mask">A</span>AC</p>
+      <p className='about-headline__text'>M<span className="about-yellow__mask about-headline__text">E</span>ET <span className="about-blue__mask about-headline__text">H</span>ERITAGE IS<span className="about-red__mask about-headline__text">A</span>AC</p>
       <div id='story'>
         <p id='first-paragraph'>Hi My name is <span className='emphasised-text'>Heritage Isaac</span> and designs is what I do. I'm not a unicorn, but I sprinkle magic (and pixels) into digital experiences. I'm a <span className='emphasised-text'>multidisciplinary designer</span> with 2+ years experience under my belt and a degree in <span className='emphasised-text'>Human Anatomy.</span> I am also a <span className='emphasised-text'>no-code devloper</span> (Framer, Wix and Wordpress).</p>
         <div id='first-grid'>

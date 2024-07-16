@@ -13,12 +13,12 @@ const Hero = () => {
   return (
     <div id="hero" className='section'>
         <div id="product-frame">
-          <p className='products-text'>PRODUCT</p>
+          <p className='products-text'>P<span className='product-red__mask products-text'>R</span>ODUCT</p>
           <img className='heritages-icon' src={HeritagesAvatar} />
         </div>
         <div id="designer-frame">
           {/* <img className="designer-vector" src={DesignerVector} /> */}
-          <p className='designers-text'>DESIGNER</p>
+          <p className='designers-text'>D<span className='designer-yellow__mask designers-text'>E</span>SIGN<span className='designer-blue__mask designers-text'>E</span>R</p>
           <img className="otw-vector" src={OpenToWorkVector} />
         </div>
       <div id="hero-caption">

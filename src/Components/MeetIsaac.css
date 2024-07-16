@@ -4,25 +4,28 @@
     gap: 4rem;
 }
 
-#headline-text {
-    font-size: clamp(4rem, 7.7vw, 5rem);
+.about-headline__text {
+    font-size: clamp(4rem, 6.7vw, 7rem);
     text-wrap: wrap;
     font-family: 'Berlin Sans';
 }
 
-#about-yellow-mask::before {
+.about-yellow__mask::before {
     content: url('../assets/designs/yellow-button.svg');
     position: absolute;
 }
 
-#about-blue-mask::before {
+.about-blue__mask::before {
     content: url('../assets/designs/blue-button.svg');
     position: absolute;
+    margin-top: 3px;
 }
 
-#about-red-mask::before {
+.about-red__mask::before {
     content: url('../assets/designs/red-button.svg');
     position: absolute;
+    transform: rotate(-20deg);
+    margin-top: 5px;
 }
 
 #story {
