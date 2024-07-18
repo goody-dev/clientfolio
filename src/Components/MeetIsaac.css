@@ -24,7 +24,7 @@
 .about-red__mask::before {
     content: url('../assets/designs/red-button.svg');
     position: absolute;
-    transform: rotate(-20deg);
+    transform: rotate(-25deg);
     margin-top: 5px;
 }
 

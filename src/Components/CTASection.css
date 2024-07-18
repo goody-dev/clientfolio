@@ -3,7 +3,8 @@
     flex-direction: column;
     align-items: center;
     gap: 20px;
-    padding: 20px 0;
+    padding: 48px 0;
+    width: 90vw;
 }
 
 .cta-headline {
@@ -17,6 +18,8 @@
 #cta-buttons {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 35px;
 
     button {

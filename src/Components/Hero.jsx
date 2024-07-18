@@ -9,6 +9,7 @@ import WirelessMouseIcon from '../assets/designs/wireless-mouse-icon.png'
 import MailIcon from '../assets/designs/mail-icon.png'
 
 
+
 const Hero = () => {
   return (
     <div id="hero" className='section'>

@@ -8,19 +8,19 @@
 .designer-yellow__mask::before {
     content: url('../assets/designs/yellow-button.svg');
     position: absolute;
-    margin-top: -7px;
+    height: 4rem;
 }
 
 .designer-blue__mask::before {
     content: url('../assets/designs/blue-button.svg');
     position: absolute;
-    margin-top: -7px;
+    height: 4rem;
 }
 
 .product-red__mask::before {
     content: url('../assets/designs/red-button.svg');
     position: absolute;
-    margin-top: -7px;
+    width: 4rem;
 }
 
 #product-frame {
@@ -29,11 +29,11 @@
     flex-direction: row;
     align-items: center;  
     justify-items: flex-start;  
-    gap: 1em;
+    gap: 1rem;
 
 
     .products-text {
-        font-size: 4em;
+        font-size: 4rem;
         font-family: 'Berlin Sans';
     }
 
@@ -50,7 +50,7 @@
     align-items: flex-end;
 
     .designers-text {
-        font-size: 4em;
+        font-size: 4rem;
         font-family: 'Berlin Sans';
     }
 
@@ -123,6 +123,28 @@
     #hero {
         padding: 48px 0;
     }
+
+    .designer-yellow__mask::before {
+        content: url('../assets/designs/yellow-button.svg');
+        position: absolute;
+        margin-top: -7px;
+        height: 9vw;
+    }
+    
+    .designer-blue__mask::before {
+        content: url('../assets/designs/blue-button.svg');
+        position: absolute;
+        margin-top: -7px;
+        height: 9vw;
+    }
+    
+    .product-red__mask::before {
+        content: url('../assets/designs/red-button.svg');
+        position: absolute;
+        margin-top: -7px;
+        height: 9vw;
+    }
+
     #product-frame {
         width: 100%;
         align-self: flex-start;
