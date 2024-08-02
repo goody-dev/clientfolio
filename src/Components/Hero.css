@@ -6,19 +6,22 @@
 }
 
 .designer-yellow__mask::before {
-    content: url('../assets/designs/yellow-button.svg');
+    content: '';
+    background-image: url('../assets/designs/yellow-button.svg');
     position: absolute;
     height: 4rem;
 }
 
 .designer-blue__mask::before {
-    content: url('../assets/designs/blue-button.svg');
+    content: '';
+    background-image: url('../assets/designs/blue-button.svg');
     position: absolute;
     height: 4rem;
 }
 
 .product-red__mask::before {
-    content: url('../assets/designs/red-button.svg');
+    content: '';
+    background-image: url('../assets/designs/red-button.svg');
     position: absolute;
     width: 4rem;
 }
@@ -30,7 +33,6 @@
     align-items: center;  
     justify-items: flex-start;  
     gap: 1rem;
-
 
     .products-text {
         font-size: 4rem;
@@ -72,8 +74,8 @@
     .hero-text {
         max-width:100%;
         text-wrap: wrap;
-        font-size: var(--subheadline-text);
-        line-height: 30px;
+        font-size: var(--subheadline-text-tab);
+        line-height: 18px;
     }
 
     hero-text-span {
@@ -97,11 +99,12 @@
 
         p {
             color: var(--primary-color);
-            font-size: 20px;
+            font-size: var(--hero-cta-text-tab);
         }
 
         button {
             padding: var(--button-padding);
+            font-size: var(--hero-cta-text-tab);
         }
     }
 }
@@ -119,29 +122,32 @@
     align-self: flex-end;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 835px) {
     #hero {
         padding: 48px 0;
     }
 
     .designer-yellow__mask::before {
-        content: url('../assets/designs/yellow-button.svg');
-        position: absolute;
-        margin-top: -7px;
+        background-size: 6vw;
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 6vw;
         height: 9vw;
     }
     
     .designer-blue__mask::before {
-        content: url('../assets/designs/blue-button.svg');
-        position: absolute;
-        margin-top: -7px;
+        background-size: 6vw;
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 6vw;
         height: 9vw;
     }
     
     .product-red__mask::before {
-        content: url('../assets/designs/red-button.svg');
-        position: absolute;
-        margin-top: -7px;
+        background-size: 6vw;
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 6vw;
         height: 9vw;
     }
 
@@ -201,6 +207,7 @@
     
             p {
                 color: var(--primary-color);
+                font-size: 20px;
             }
     
             button {

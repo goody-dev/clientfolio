@@ -17,11 +17,14 @@
   --headline-text: 120px;
   --quote-size: 100px;
   --header-text: 30px;
+  --header-text-tab: 24px;
   --paragraph-text: 16px;
   --scroll-text: 20px;
   --button-padding: 8px 16px;
   --headline-text: 120px;
   --subheadline-text:24px;
+  --subheadline-text-tab: 14px;
+  --hero-cta-text-tab: 12px;
   --exp-headline-text: 40px;
   --exp-text: 26px;
   --strory-text: 28px;
@@ -30,7 +33,9 @@
   --small-text: 11px;
   --scroll-text: 20px;
   --work-title-text: 32px;
+  --work-title-text-tab: 18.816px;
   --work-about-text: 20px;
+  --work-about-text-tab: 11.76px;
 
   --font-color: #F2F2F2;
   --primary-color: rgba(242, 242, 242, 0.7);
@@ -222,10 +227,10 @@ button {
 
 .section-header-text {
   align-self: center;
-  font-size: var(--header-text);
+  font-size: var(--header-text-tab);
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 835px) {
   .section {
     max-width: 1440px;
     width: 90%;

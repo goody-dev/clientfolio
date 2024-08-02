@@ -17,6 +17,14 @@ const CTASection = () => {
             <img src={ResumeIcon} />Cv/Resume
         </button>
       </div>
+      <div id='socials'>
+        <a href='#'>Linkedin</a>
+        <a href='#'>{"X(Twitter)"}</a>
+        <a href='#'>Medium</a>
+        <a href='#'>Behance</a>
+        <a href='#'>Instagram</a>
+        <a href='#'>Tiktok</a>
+      </div>
     </div>
   )
 }

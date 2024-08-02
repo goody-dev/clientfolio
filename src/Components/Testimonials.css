@@ -58,14 +58,17 @@
 .testimonial-slider {
     display: flex;
     width: 100%;
-    flex-direction: row;
-    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 20px;
 }
 
 .slider-controls {
     display: flex;
     flex-direction: row;
+    width: 100%;
     gap: 5px;
+    justify-content: space-between;
 }
 
 .slider-controls > button {
@@ -73,7 +76,7 @@
     border: none;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 835px) {
     .testimonial-cards {
         display: flex;
         flex-direction: row;
@@ -88,6 +91,24 @@
             display: inline;
             transform: rotate(10deg);
         }
+    }
+    .testimonial-slider {
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    .slider-controls {
+        display: flex;
+        flex-direction: row;
+        gap: 5px;
+        justify-content: end;
+    }
+    
+    .slider-controls > button {
+        background: none;
+        border: none;
     }
 }
 
