@@ -171,10 +171,14 @@ button {
   border: none;
   gap: 5px;
   cursor: pointer;
-  background-color: var(--secondary-color);
+  background-color: var(--img-background);
   color: var(--font-color);
   border-radius: 3px;
   font-size: 16px; 
+}
+
+.nav_button {
+  background-color: var(--card-background);
 }
 
 #services-scroll {

@@ -52,6 +52,7 @@
     
     p {
         text-wrap: wrap;
+        max-width: 90vw;
     }
 }
 

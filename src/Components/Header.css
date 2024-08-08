@@ -5,6 +5,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    max-width: 90vw;
 }
 
 #nav-bar {
@@ -42,7 +43,6 @@
     button {
         padding: 5px;
         width: 90px;
-        color: aqua;
     }
 
     .button-inactive {
@@ -75,6 +75,14 @@
 
 .hamburger {
     display: inline-block;
+    padding: var(--button-padding);
+    padding-left: 32px;
+    padding-right: 32px;
+}
+
+.hamburger-outline {
+    border: 3px solid var(--card-background);
+    padding: 4px;
 }
 
 @media screen and (min-width: 864px) {
@@ -106,7 +114,7 @@
         display: flex;
     }
 
-    .hamburger {
+    .hamburger, .hamburger-outline {
         display: none;
     }
 }

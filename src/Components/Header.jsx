@@ -23,19 +23,21 @@ const Header = () => {
         <ul id="nav-bar">
           <li className='navigator'>
             <hr ref={workIndicator}  id='work-page-indicator' className={url.pathname === "/work"? "page-indicator":url.pathname === "/about"? "page-indicator indicator-inactive": "page-indicator"}/>
-            <NavLink to="/work" ><button id='work-button' className={url.pathname === "/work"? "":url.pathname === "/about"? "button-inactive": ""}>Work</button></NavLink>
+            <NavLink to="/work" ><button id='work-button' className={url.pathname === "/work"? "nav_button":url.pathname === "/about"? "button-inactive": ""}>Work</button></NavLink>
           </li>
           <li className='navigator'>
             <hr ref={aboutIndicator} id='abtme-page-indicator' className={url.pathname === "/about"? "page-indicator": "page-indicator indicator-inactive"}/>
-            <NavLink to="/about" ><button id='abtme-button' className={url.pathname === "/about"? "": "button-inactive"}>About Me</button></NavLink>
+            <NavLink to="/about" ><button id='abtme-button' className={url.pathname === "/about"? "nav_button": "button-inactive"}>About Me</button></NavLink>
           </li>
         </ul>
       </nav>
       <div id="header-cta">
         <button className="resume-button">Resume<img src={DiagonalArrowUpIcon} /></button>
-        <button className="lets-talk"><img src={MailIcon} />Let's Talk</button>
+        <button className="lets-talk nav_button"><img src={MailIcon} />Let's Talk</button>
       </div>
-      <p className="hamburger">Menu</p>
+      <div className='hamburger-outline'>
+        <button className="hamburger nav_button">Menu</button>
+      </div>
     </header>
   )
 }
